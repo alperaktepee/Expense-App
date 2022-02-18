@@ -1,0 +1,107 @@
+.expense-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    padding: 0.5rem;
+    margin: 1rem 0;
+    border-radius: 12px;
+    color: white;
+    background: #180D4C;
+background: -webkit-linear-gradient(top left, #180D4C, #D926A8);
+background: -moz-linear-gradient(top left, #180D4C, #D926A8);
+background: linear-gradient(to bottom right, #180D4C, #D926A8);
+}
+
+.expense-item__description{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-end;
+    flex-flow: column-reverse;
+    justify-content: flex-start;
+    flex: 1;
+}
+
+.expense-item h2{
+    font-size: 1rem;
+    flex: 1;
+    margin: 0 1rem;
+
+}
+.expense-item__price {
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background: #C11A1B;
+    background: -webkit-linear-gradient(top left, #C11A1B, #CD69A5);
+    background: -moz-linear-gradient(top left, #C11A1B, #CD69A5);
+    background: linear-gradient(to bottom right, #C11A1B, #CD69A5);
+    border: 1px solid #C11A1B;
+    padding: 0.5rem;
+    border-radius: 12px;
+  }
+  .expense-date {
+    display: flex;
+    flex-direction: column;
+    width: 5.5rem;
+    height: 5.5rem;
+    border: 1px solid #368F75;
+    background: #368F75;
+background: -webkit-linear-gradient(top left, #368F75, #534A88);
+background: -moz-linear-gradient(top left, #368F75, #534A88);
+background: linear-gradient(to bottom right, #368F75, #534A88);
+    color: white;
+    border-radius: 12px;
+    align-items: center;
+    justify-content: center;
+  }
+  .change-btn{
+    font-size: 1em;
+    font-weight: bold;
+    color: white;
+    background: #6E5D86;
+    background: -webkit-linear-gradient(top left, #6E5D86, #5D8ED5);
+    background: -moz-linear-gradient(top left, #6E5D86, #5D8ED5);
+    background: linear-gradient(to bottom right, #6E5D86, #5D8ED5);
+    border: 1px solid #6E5D86;
+    padding: 0.5rem;
+    border-radius: 12px;
+    margin-left: 10px;
+  }
+  .change-btn:hover{
+cursor: pointer;
+background: #C11A1B;
+background: -webkit-linear-gradient(top left, #C11A1B, #CD69A5);
+background: -moz-linear-gradient(top left, #C11A1B, #CD69A5);
+background: linear-gradient(to bottom right, #C11A1B, #CD69A5);
+border: 1px solid #C11A1B;
+transition: 0.9s;
+  }
+ 
+  
+  .expense-date__year {
+    font-size: 0.75rem;
+  }
+  
+  .expense-date__day {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  @media (min-width: 580px) {
+    .expense-item__description {
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      flex: 1;
+    }
+  
+    .expense-item__description h2 {
+      font-size: 1.25rem;
+    }
+  
+    .expense-item__price {
+      font-size: 1.25rem;
+      padding: 0.5rem 1.5rem;
+    }
+  }
